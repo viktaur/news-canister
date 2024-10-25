@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "news-canister-backend": {
+      "candid": "src/news-canister-backend/news-canister-backend.did",
+      "package": "news-canister-backend",
+      "type": "rust"
+    },
+    "news-canister-frontend": {
+      "dependencies": [
+        "news-canister-backend"
+      ],
+      "source": [
+        "src/news-canister-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "news-canister-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

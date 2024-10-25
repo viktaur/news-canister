@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/news-canister-backend"
+]
+resolver = "2"
