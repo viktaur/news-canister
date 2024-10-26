@@ -1,0 +1,8 @@
+[package]
+name = "silent-whistle-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+candid = "0.10.10"
+chrono = "0.4.38"

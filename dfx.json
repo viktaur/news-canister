@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "news-canister-backend": {
-      "candid": "src/news-canister-backend/news-canister-backend.did",
-      "package": "news-canister-backend",
+    "backend": {
+      "candid": "src/crates/silent-whistle-icp.did",
+      "package": "silent-whistle-icp",
       "type": "rust"
     },
-    "news-canister-frontend": {
+    "frontend": {
       "dependencies": [
-        "news-canister-backend"
+        "backend"
       ],
       "source": [
-        "src/news-canister-frontend/dist"
+        "src/frontend/dist"
       ],
       "type": "assets",
-      "workspace": "news-canister-frontend"
+      "workspace": "silent-whistle-frontend"
     }
   },
   "defaults": {

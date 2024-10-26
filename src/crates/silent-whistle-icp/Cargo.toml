@@ -1,5 +1,5 @@
 [package]
-name = "news-canister-backend"
+name = "silent-whistle-icp"
 version = "0.1.0"
 edition = "2021"
 
@@ -10,5 +10,10 @@ crate-type = ["cdylib"]
 
 [dependencies]
 candid = "0.10"
-ic-cdk = "0.16"
+ic-cdk = "0.16.0"
 ic-cdk-timers = "0.10" # Feel free to remove this dependency if you don't need timers
+ic_principal = "0.1.1"
+risc0-zkvm = "1.1.2"
+serde = { version = "1.0.213", features = ["derive"] }
+tracing-subscriber = "0.3.18"
+silent-whistle-risc0 = { path = "../silent-whistle-risc0" }

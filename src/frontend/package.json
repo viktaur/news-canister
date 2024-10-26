@@ -1,10 +1,10 @@
 {
-  "name": "news-canister-frontend",
+  "name": "silent-whistle-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "setup": "npm i && dfx canister create news-canister-backend && dfx generate news-canister-backend && dfx deploy",
+    "setup": "npm i && dfx canister create silent-whistle-icp && dfx generate silent-whistle-icp && dfx deploy",
     "start": "vite --port 3000",
     "prebuild": "dfx generate",
     "build": "tsc && vite build",
