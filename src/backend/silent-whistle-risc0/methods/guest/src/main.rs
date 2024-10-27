@@ -1,5 +1,8 @@
+#![no_std]
+#![feature(start)]
+
 use risc0_zkvm::guest::env;
-use silent_whistle_core::ProofInput;
+use silent_whistle_core::{ProofInput, CommitInfo};
 
 fn main() {
     // read the input

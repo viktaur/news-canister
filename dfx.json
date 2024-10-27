@@ -1,9 +1,11 @@
 {
   "canisters": {
     "backend": {
-      "candid": "src/crates/silent-whistle-icp.did",
-      "package": "silent-whistle-icp",
-      "type": "rust"
+      "candid": "src/backend/silent-whistle-backend.did",
+      "package": "silent-whistle-backend",
+      "type": "custom",
+      "build": "cargo build --target wasm32-unknown-unknown --package silent-whistle --release",
+      "wasm": "target/wasm32-unknown-unknown/release/rust_hello.wasm"
     },
     "frontend": {
       "dependencies": [
@@ -14,12 +16,6 @@
       ],
       "type": "assets",
       "workspace": "silent-whistle-frontend"
-    }
-  },
-  "defaults": {
-    "build": {
-      "args": "",
-      "packtool": ""
     }
   },
   "output_env_file": ".env",

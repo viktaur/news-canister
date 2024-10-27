@@ -1,0 +1,7 @@
+[package]
+name = "silent-whistle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+silent-whistle-backend = { path="src/backend" }

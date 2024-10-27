@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "setup": "npm i && dfx canister create silent-whistle-icp && dfx generate silent-whistle-icp && dfx deploy",
+    "setup": "npm i && dfx canister create silent-whistle-backend && dfx generate silent-whistle-backend && dfx deploy",
     "start": "vite --port 3000",
     "prebuild": "dfx generate",
     "build": "tsc && vite build",
