@@ -1,10 +1,12 @@
-[workspace]
-members = [
-    "silent-whistle-core",
-    "silent-whistle-icp",
-    "silent-whistle-risc0"
-]
-resolver = "2"
+[package]
+name = "silent-whistle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+silent-whistle-core = { path = "silent-whistle-core" }
+silent-whistle-icp = { path = "silent-whistle-icp" }
+# silent-whistle-risc0 = { path = "silent-whistle-risc0" }
 
 # Always optimize; building and running the guest takes much longer without optimization.
 [profile.dev]

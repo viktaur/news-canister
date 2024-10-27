@@ -3,8 +3,14 @@ name = "silent-whistle-risc0"
 version = "0.1.0"
 edition = "2021"
 
-[build-dependencies]
-risc0-build = { path = "../../../risc0/build" }
+[dependencies]
+host = { path = "host" }
+methods = { path = "methods" }
 
-[package.metadata.risc0]
-methods = ["guest"]
+# Always optimize; building and running the guest takes much longer without optimization.
+# [profile.dev]
+# opt-level = 3
+
+# [profile.release]
+# debug = 1
+# lto = true
